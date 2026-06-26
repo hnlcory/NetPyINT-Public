@@ -729,15 +729,15 @@ class NetPyINTApp(tk.Tk):
                                    command=self.start_scan)
         self.btn_scan.pack(side="right", padx=4)
 
-        self.btn_load = ttk.Button(top, text="📂 Load Log File",
+        self.btn_load = ttk.Button(top, text="Load Log File",
                                    command=self.open_log_file)
         self.btn_load.pack(side="right", padx=4)
 
-        self.btn_delete = ttk.Button(top, text="🗑 Delete Selected",
+        self.btn_delete = ttk.Button(top, text="Delete Selected",
                                       command=self.delete_selected_ips)
         self.btn_delete.pack(side="right", padx=4)
 
-        self.btn_loghelper = ttk.Button(top, text="📋 Log Helper",
+        self.btn_loghelper = ttk.Button(top, text="Log Helper",
                                          command=self.open_log_helper)
         self.btn_loghelper.pack(side="right", padx=4)
 
@@ -1034,7 +1034,7 @@ class NetPyINTApp(tk.Tk):
         # without making any API calls. Useful after changing KEY_PLATFORMS
         # or scoring weights, or to promote Partial IPs that now have enough data.
         self.btn_recalculate = ttk.Button(
-            coverage_body, text="🔄 Recalculate Levels",
+            coverage_body, text="Recalculate Levels",
             command=self.recalculate_threat_levels)
         self.btn_recalculate.pack(anchor="w", padx=12, pady=(0, 4))
 
@@ -1222,7 +1222,7 @@ class NetPyINTApp(tk.Tk):
         #     - On cancel: no changes are made.
         #
         # Usage:
-        #     Called from the 🗑 Delete Selected button in the top bar,
+        #     Called from the Delete Selected button in the top bar,
         #     or from the right-click context menu → "Delete Selected IPs".
         selected = self.tree.selection()
         if not selected:
@@ -1272,7 +1272,7 @@ class NetPyINTApp(tk.Tk):
         #       window does not affect the other.
         #
         # Usage:
-        #     Called from the "📋 Log Helper" button in the top bar.
+        #     Called from the "Log Helper" button in the top bar.
         # Resolve log_helper.py inside the helpers/ subdirectory
         script_dir = os.path.dirname(os.path.abspath(__file__))
         helper_path = os.path.join(script_dir, "helpers", "log_helper.py")
@@ -2460,7 +2460,7 @@ class NetPyINTApp(tk.Tk):
         #       those to see which ones now qualify for a final level.
         #
         # Usage:
-        #     Called from the "🔄 Recalculate Levels" button in the sidebar.
+        #     Called from the "Recalculate Levels" button in the sidebar.
         if self.scan_running:
             messagebox.showwarning("Scan in progress",
                                     "Please wait for the current scan to finish, "

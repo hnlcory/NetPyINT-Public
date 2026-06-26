@@ -4,6 +4,8 @@ A Python GUI desktop application for firewall log analysis, multi-source OSINT a
 
 NetPyINT's two supported log formats: the default `reject wan in` firewall log line and `banIP/inbound/drop/*` entries are created by **OpenWRT** (the stock firewall and the popular banIP blocklist package). Any firewall with matching log syntax will parse but OpenWRT is the primary focus.
 
+![Image of the main UI](images/exampleImage01.png)
+
 ## Features
 
 - **Log parsing** — Two firewall log formats: WAN reject (`reject wan in`) and banIP drop (`banIP/inbound/drop/*`), both native to OpenWRT. Extracts source/destination IPs, ports, protocols, and timestamps with automatic deduplication and hit counting.
