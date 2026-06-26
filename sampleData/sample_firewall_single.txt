@@ -1,0 +1,1 @@
+Mon Mar 23 13:13:10 2026 kern.warn kernel: [311204.649730] reject wan in: IN=eth1 OUT= MAC=xx:xx:xx:xx (Redacted) SRC=104.16.160.145 DST=xxx.xxx.xx.xx (PrivNetwork) LEN=50 TOS=0x00 PREC=0x00 TTL=61 ID=0 DF PROTO=UDP SPT=443 DPT=55228 LEN=30 MARK=0x1
